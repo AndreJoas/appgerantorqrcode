@@ -1,0 +1,63 @@
+.qrcode{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#canvas{
+    max-width: 100%;
+    width: 60%;
+    margin: 5px;
+    margin-top: 2rem;
+    animation: quadr infinite 1.5s;
+}
+
+
+@keyframes quadr {
+    0%, 100% {
+      transform: translateY(-1%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+#botao{
+    max-width: 50%;
+    width: 100%;
+    padding: 2px;
+    font-size: 15px;
+    font-weight: 700;
+    background: #111;
+    margin-top: 10px;
+    cursor: pointer;
+    transition:1s;
+    animation: botao 3s linear infinite;
+}
+#botao:hover{
+    border-radius: 14px;
+}
+@keyframes botao {
+    0%{
+        background: red;
+        color: #fff;
+    }
+    25%{
+        background: rgb(225, 124, 124);
+
+      
+    }50%{
+        
+        background: rgb(102, 67, 67);
+
+    }75%{
+        
+     
+    }
+    100%{
+        
+    }
+}

@@ -1,0 +1,34 @@
+.card{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    padding: 3px;
+}
+input{
+    max-width: 100%;
+    width: 80%;
+    outline: none;
+    border:dashed 0.2px;
+    border-radius: 6px;
+    padding: 4px;
+}
+.quad{
+    animation: quadr infinite 1.5s;
+}
+
+
+
+@keyframes quadr {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}

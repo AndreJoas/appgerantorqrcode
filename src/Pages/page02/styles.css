@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerQr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 1.2rem;
+    margin: 1px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 2px;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+h1{
+    font-size: 19px;
+}
+
+.subqr{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:4px;
+    align-items: center;
+    max-width: 100%;
+    width: 90%;
+}
+.div2{
+    margin: 4px;
+    padding: 4px;
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    width: 100%;
+    background-size: 400 400;
+
+
+
+animation: poke 5s ease  infinite;
+background-size: 400% 400%;
+background-image: linear-gradient( 109.6deg,  rgba(204,228,247,1) 11.2%, rgb(36, 83, 103) 80.2%,rgba(204,228,247,1) 11.2% );
+/* background-image:  linear-gradient(135deg ,red 20%, orange 50% , red 80%, orange ); */
+}
+
+@keyframes poke {
+0% {
+  background-position: 51% 0%;
+}
+50% {
+  background-position: 50% 100%;
+}
+100% {
+  background-position: 51% 0%;
+}
+}
+
+
+.volta{
+    max-width: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.voltab{
+    max-width: 100%;
+    width: 100%;
+    background: #eef1f5;
+    font-size: 16px;
+    font-weight: 700;
+    padding:2px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.voltab:hover{
+    background-color: #a4a4a5;
+    color:#eef1f5;
+}
+
+
+@media(max-width:1100px) {
+    .containerQr{
+        max-width: 100%;
+        width: 80%;
+        margin-top: 2rem;
+        margin-left: 7rem;
+    }
+}
+
+@media(max-width:900px) {
+    .containerQr{
+        max-width: 100%;
+        width: 90%;
+        margin-top: 1rem;
+        margin-left:3rem;
+    }
+}
+@media(max-width:710px) {
+    .containerQr{
+        max-width: 100%;
+        width: 90%;
+        margin-top: 1rem;
+        margin-left:2rem;
+    }
+    .subqr{
+        gap: 20px;
+        max-width: 100%;
+        width: 100%;
+    }
+    #botao{
+        max-width: 100%;
+        width: 100%;
+        font-size: 16px;
+    }
+}
+@media(max-width:550px) {
+    .containerQr{
+        max-width: 100%;
+        width: 90%;
+        margin-top: 1rem;
+        margin-left:1.6em;
+    }
+    .div2{
+        max-width: 80%;
+    }
+    .subqr{
+        gap: 10px;
+        max-width: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #botao{
+        max-width: 100%;
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+
+@media(max-width:380px) {
+    .containerQr{
+        max-width: 100%;
+        width: 90%;
+        margin-top: 1rem;
+        margin-left:1.2em;
+    }
+    .div1{
+        font-size: 12px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .subqr{
+        gap: 10px;
+        max-width: 100%;
+        width: 100%;
+    }
+    #botao{
+        max-width: 100%;
+        width: 100%;
+        font-size: 12px;
+    }
+    .div2{
+        max-width: 90%;
+    }
+}
+@media (max-width:300px) {
+    .containerQr{
+        max-width: 100%;
+        width:100%;
+        margin-top: 1rem;
+        margin-left:0.1em;
+     
+    }
+}
